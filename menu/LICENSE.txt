@@ -1,7 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2024 Val Espinal (https://codepen.io/valeriaespinal/pen/wvLWexK)
-Fork of an original work NavBar con efecto scroll (https://codepen.io/valeriaespinal/pen/wvLWexK)
+Copyright (c) 2024 Val Espinal (https://codepen.io/valeriaespinal/pen/Porzzdw)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
