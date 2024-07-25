@@ -1,0 +1,27 @@
+#teclado{
+  border:1px solid grey;
+  text-align:center;
+  width:200px;
+  height:270px;
+}
+.clave{
+  height:30px;
+  width:202px;
+  box-sizing:border-box;
+  text-align:end;
+}
+.tecla{
+  width:60px;
+  height:60px;
+  border:none;
+  background:silver;
+  border-radius:15px;
+  margin-top:5px;
+}
+.borrar{
+  width:120px;
+}
+.caja{
+  margin:0 auto;
+  width:200px;
+}
