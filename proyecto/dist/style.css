@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
 
 * {
-    user-select: none;
+  user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none; 
-  -ms-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ header .logo {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
-  font-family: 'Yanone Kaffeesatz';
+  font-family: "Yanone Kaffeesatz";
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -102,7 +102,6 @@ header ul li a {
   transition: transform 0.3s ease-in-out;
 }
 
-
 header ul li:last-child {
   margin-left: auto;
 }
@@ -124,7 +123,7 @@ header ul li:last-child {
   text-align: justify;
   text-justify: right;
   letter-spacing: -10px;
-  color: black;
+  color: #141414;
   display: inline-block;
   vertical-align: top;
 }
@@ -136,7 +135,7 @@ header ul li:last-child {
 .small-text {
   display: inline-block;
   font-size: 48px;
-  color: black;
+  color: #141414;
   margin-left: 10px;
   vertical-align: top;
   line-height: 1.2;
@@ -161,13 +160,13 @@ header ul li:last-child {
 .image-box img {
   max-width: 100%;
   height: auto;
-  border: 2px solid black;
+  border: 2px solid #141414;
 }
 
 .image-box p {
   font-size: 18px;
   margin-top: 5px;
-  color: black;
+  color: #141414;
   text-align: left;
   word-spacing: 180px;
 }
@@ -184,14 +183,14 @@ header ul li:last-child {
   font-family: Helvetica;
   font-weight: normal;
   text-transform: uppercase;
-  color: black;
+  color: #141414;
   margin-right: 10px;
 }
 
 .explore-icon {
-  width: 35px; 
+  width: 35px;
   height: auto;
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .explore-icon:hover {
@@ -246,16 +245,15 @@ header ul li:last-child {
 }
 :root {
   --cursor-size: 28px;
-  --bg: #FAF7EE;
+  --bg: #faf7ee;
 }
-
 
 #cursor {
   position: fixed;
   top: calc(var(--cursor-size) * -0.5);
-  left:  calc(var(--cursor-size) * -0.5);
+  left: calc(var(--cursor-size) * -0.5);
   pointer-events: none;
-  mix-blend-mode: difference;  
+  mix-blend-mode: difference;
   filter: url(#goo);
 }
 
@@ -273,7 +271,7 @@ header ul li:last-child {
   margin: 0px auto 0;
   padding: 0px;
   text-align: center;
-  max-width: 800px; 
+  max-width: 800px;
 }
 
 .who-we-are {
@@ -285,12 +283,12 @@ header ul li:last-child {
   display: inline-block;
   position: relative;
   top: -140px;
-  margin-right: -70px; 
+  margin-right: -70px;
 }
 
 .brand-text {
   font-family: Helvetica;
-  font-size: 38px; 
+  font-size: 38px;
   color: #141414;
   margin: -60px;
   display: inline-block;
@@ -314,12 +312,12 @@ header ul li:last-child {
   display: flex;
   cursor: grab;
   overflow-x: scroll;
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
-  display: none;  
+  display: none;
 }
 
 .slider-item {
@@ -339,13 +337,13 @@ header ul li:last-child {
 }
 
 .little-text {
-  font-family: 'Sedgwick Ave Display';
+  font-family: "Sedgwick Ave Display";
   font-size: 16px;
   color: #141414;
 }
 
 .shoe-name {
-  font-family: 'Big Shoulders Display';
+  font-family: "Big Shoulders Display";
   font-size: 80px;
   color: #141414;
   font-weight: bold;
@@ -388,7 +386,7 @@ header ul li:last-child {
 
 .author-name {
   font-size: 34px;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: "Sedgwick Ave Display", cursive;
   color: #141414;
   position: absolute;
   top: 17%;
@@ -404,11 +402,11 @@ header ul li:last-child {
   color: #141414;
   margin: 0;
   margin-left: 20px;
-  max-width: 500px; 
+  max-width: 500px;
   margin-bottom: 250px;
 }
 .footer-section {
-  background-color: #fbf8ed;
+  background-color: #f8f5eb;
   padding: 220px 20px 20px;
   height: 300px;
   font-family: Helvetica, sans-serif;
@@ -417,7 +415,10 @@ header ul li:last-child {
   flex-direction: column;
 }
 
-.footer-left, .footer-middle, .footer-right, .footer-bottom {
+.footer-left,
+.footer-middle,
+.footer-right,
+.footer-bottom {
   display: flex;
   align-items: center;
 }
@@ -426,6 +427,7 @@ header ul li:last-child {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  color: #141414;
 }
 
 .footer-title {
@@ -454,12 +456,20 @@ header ul li:last-child {
   font-size: 12px;
 }
 
-.info, .policy {
+.info,
+.policy {
   margin-left: 50px;
 }
 
-.info p, .policy p {
+.info p,
+.policy p {
   margin: 5px 0;
+  font-size: 15px;
+}
+.info ul li,
+.policy ul li {
+  margin: 5px 0;
+  font-size: 21px;
 }
 
 .top-right-icon {
@@ -478,7 +488,8 @@ header ul li:last-child {
   justify-content: flex-end;
 }
 
-.credits, .copyright {
+.credits,
+.copyright {
   font-size: 12px;
   margin-right: 10px;
 }
@@ -553,7 +564,8 @@ footer {
   flex: 1;
 }
 
-.info, .policy {
+.info,
+.policy {
   margin: 0 20px;
 }
 
@@ -563,13 +575,15 @@ footer {
   margin-bottom: 5px;
 }
 
-.info ul, .policy ul {
+.info ul,
+.policy ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.info li, .policy li {
+.info li,
+.policy li {
   font-size: 14px;
   color: #141414;
 }
@@ -588,8 +602,21 @@ footer {
 
 .credits-section {
   text-align: right;
+  background: #fbf8ed;
 }
 
+.credits-section ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+}
+.credits-section ul li {
+  position: relative;
+  list-style: none;
+  font-size: 12px;
+  color: #141414;
+}
 .credits-section p {
   margin: 0;
   font-size: 12px;
@@ -601,13 +628,6 @@ footer {
   height: 24px;
   margin-left: 10px;
 }
-.scroll-to-top {
-  width: 80px;
-  cursor: pointer;
-  margin-right: 30px;
-  transition: transform 0.5s ease;
-}
-
 .scroll-to-top:hover {
   transform: rotate(360deg);
 }
