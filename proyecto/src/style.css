@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+* {
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  font-family: Helvetica;
+  background: #fcf9ee;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 50px;
+}
+
+header .logo {
+  position: fixed;
+  top: 80px;
+  left: -60px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  transform: rotate(270deg);
+  transition: 0.6s;
+}
+header .mini-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  width: 90px;
+}
+
+header .mini-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header .mini-menu ul li {
+  margin: 10px 0;
+  width: 100%;
+}
+
+header .mini-menu ul li a {
+  text-decoration: none;
+  color: #141414;
+  font-family: Helvetica;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+header ul li:last-child {
+  margin-left: auto;
+}
+
+.inicio {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.large-text {
+  display: inline-block;
+  text-align: left;
+}
+
+.big {
+  font-size: 180px;
+  font-weight: bold;
+  line-height: 0.8;
+  text-align: justify;
+  text-justify: right;
+  letter-spacing: -10px;
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.big + .big {
+  margin-top: 40px;
+}
+
+.small-text {
+  display: inline-block;
+  font-size: 48px;
+  color: black;
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 1.2;
+}
+
+.imagenes {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.image-box {
+  margin: 0 10px;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+
+.image-box p {
+  font-size: 18px;
+  margin-top: 5px;
+  color: black;
+  text-align: left;
+  word-spacing: 180px;
+}
+.explore-section {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 120px;
+}
+
+.explore-text {
+  font-size: 35px;
+  font-family: Helvetica;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  margin-right: 10px;
+}
+
+.explore-icon {
+  width: 35px; 
+  height: auto;
+    transition: transform 0.5s ease;
+}
+
+.explore-icon:hover {
+  transform: rotate(-360deg);
+}
+
+.scrolling-banner {
+  margin: 120px 0;
+  background-color: #ddc92a;
+  color: #141414;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 7px 0;
+  border: 3px solid #141414;
+  position: relative;
+  font-size: 24px;
+  height: 60px;
+}
+
+.banner-content {
+  display: flex;
+  width: 100%;
+  animation: scroll-text 15s linear infinite;
+}
+
+.banner-content span {
+  font-family: Helvetica;
+  font-size: 34px;
+  margin-right: 10px;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-banner::before {
+  content: "DO NOT SCROLL · DEPLACE SHOP";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 39px;
+  color: #141414;
+  padding: 7px 0;
+}
+:root {
+  --cursor-size: 28px;
+  --bg: #FAF7EE;
+}
+
+
+#cursor {
+  position: fixed;
+  top: calc(var(--cursor-size) * -0.5);
+  left:  calc(var(--cursor-size) * -0.5);
+  pointer-events: none;
+  mix-blend-mode: difference;  
+  filter: url(#goo);
+}
+
+.cursor-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: var(--cursor-size);
+  background: var(--bg);
+  transform-origin: center center;
+}
+.brand-info {
+  margin: 0px auto 0;
+  padding: 0px;
+  text-align: center;
+  max-width: 800px; 
+}
+
+.who-we-are {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #141414;
+  text-decoration: underline;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  top: -140px;
+  margin-right: -70px; 
+}
+
+.brand-text {
+  font-family: Helvetica;
+  font-size: 38px; 
+  color: #141414;
+  margin: -60px;
+  display: inline-block;
+  text-align: left;
+}
+
+.brand-text p {
+  margin: 0;
+}
+
+.brand-text .underline {
+  text-decoration: underline;
+}
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.slider {
+  display: flex;
+  cursor: grab;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.slider::-webkit-scrollbar {
+  display: none;  
+}
+
+.slider-item {
+  background-color: #e7d6c4;
+  border: 3px solid #141414;
+  margin: 10px;
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -40px;
+}
+
+.little-text {
+  font-family: 'Sedgwick Ave Display';
+  font-size: 16px;
+  color: #141414;
+}
+
+.shoe-name {
+  font-family: 'Big Shoulders Display';
+  font-size: 80px;
+  color: #141414;
+  font-weight: bold;
+  letter-spacing: -4px;
+  margin: 5px 0;
+}
+
+.price-strike {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #141414;
+  text-decoration: line-through;
+  margin: 5px 0;
+}
+
+.price {
+  font-family: Helvetica;
+  font-size: 28px;
+  color: #141414;
+  margin: 5px 0;
+}
+.testimonial-section {
+  margin-top: 150px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.quotation-mark {
+  width: 118px;
+  position: relative;
+  left: -25%;
+}
+
+.author-name {
+  font-size: 34px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: #141414;
+  position: absolute;
+  top: 17%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.testimonial-quote {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: #141414;
+  margin: 0;
+  margin-left: 20px;
+  max-width: 500px; 
+  margin-bottom: 250px;
+}
+.footer-section {
+  background-color: #fbf8ed;
+  padding: 220px 20px 20px;
+  height: 300px;
+  font-family: Helvetica, sans-serif;
+  color: #141414;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left, .footer-middle, .footer-right, .footer-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.subscribe img {
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.subscribe-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-text {
+  font-size: 12px;
+}
+
+.info, .policy {
+  margin-left: 50px;
+}
+
+.info p, .policy p {
+  margin: 5px 0;
+}
+
+.top-right-icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+.top-right-icon:hover {
+  transform: rotate(-360deg);
+  transition: transform 0.6s;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.credits, .copyright {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  margin-left: 10px;
+}
+footer {
+  background-color: #fbf8ed;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-text {
+  margin-bottom: 20px;
+}
+
+.subscribe-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #141414;
+}
+
+.subscribe-text img {
+  margin-top: 10px;
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #141414;
+}
+
+.email-input {
+  border: none;
+  border-bottom: 1px solid #141414;
+  background-color: #fbf8ed;
+  color: #141414;
+  margin: 5px 0;
+  padding: 5px;
+  width: 200px;
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  color: #141414;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.info-policy-section {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.info, .policy {
+  margin: 0 20px;
+}
+
+.section-title {
+  font-size: 12px;
+  color: #141414;
+  margin-bottom: 5px;
+}
+
+.info ul, .policy ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li, .policy li {
+  font-size: 14px;
+  color: #141414;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.scroll-to-top {
+  width: 80px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.credits-section {
+  text-align: right;
+}
+
+.credits-section p {
+  margin: 0;
+  font-size: 12px;
+  color: #141414;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.scroll-to-top {
+  width: 80px;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: transform 0.5s ease;
+}
+
+.scroll-to-top:hover {
+  transform: rotate(360deg);
+}
